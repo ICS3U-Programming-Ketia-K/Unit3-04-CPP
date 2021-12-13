@@ -9,19 +9,18 @@
 int main() {
     int integer;
 
-    // input
     // Get an integer from the user
     std::cout << "Please enter an integer: ";
     std::cin >> integer;
+    std::cout << "" << std::endl;
 
-    // process
-    // this function will give an output if one of the statements is true
+    // The program receives the integer and compare to the statements
     if (integer < 0) {
-        // output
+        // Then, it gives the output based on the statement that is true!
         std::cout << "This number is a negative number";
     } else if (integer > 0) {
         std::cout << "This number is a positive number ";
-    } else if (integer == 0) {
-        std::cout << "This number is zero! ";
+    } else {
+        std::cout << "This number is just zero! ";
     }
 }
